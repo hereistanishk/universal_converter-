@@ -1,0 +1,42 @@
+name: universal_converter
+description: "A universal file converter app for Android."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For Material 3 icons and components
+  cupertino_icons: ^1.0.2
+  
+  # For rendering SVG icons for our modules
+  flutter_svg: ^2.0.9
+
+  # We will need this in the next phase for picking files
+  file_picker: ^6.1.1
+  
+  # We will need this later for ads
+  google_mobile_ads: ^4.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  # We will create and add our SVG icons here
+  assets:
+    - assets/icons/
